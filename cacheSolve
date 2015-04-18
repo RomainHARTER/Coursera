@@ -1,4 +1,4 @@
-# Try to see if I've cached solve(matrix), if not, calculates it, else, returns it 
+# Try to see if I've cached solve(matrix), if yes, returns it, if not calculates it and caches it
 cacheSolve = function(x, ...) {
         m = x$getCacheMatrix()
         if(!is.null(m)) {
