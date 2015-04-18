@@ -1,0 +1,17 @@
+# Firstly I gonna do the cache matrix
+makeCacheMatrix = function(x = matrix()) {
+        m   = NULL
+        set = function(y) {
+                x <<- y
+                m <<- NULL
+        }
+        get            = function() x
+        setCacheMatrix = function(solve) m <<- solve
+        getCacheMatrix = function() m
+        
+        list(set            = set, 
+             get            = get,
+             setCacheMatrix = setCacheMatrix,
+             getCacheMatrix = getCacheMatrix)
+        
+}
